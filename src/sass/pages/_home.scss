@@ -1,0 +1,26 @@
+.section-about {
+  .about {
+    &__content-box {
+      margin-top: 4rem;
+    }
+
+    &__icon {
+      display: inline-block;
+      transform: translate(18px, 0);
+      transition: all 0.2s;
+
+      @include respond(phone) {
+        width: 2.4rem;
+        transform: translate(10px, 0);
+      }
+    }
+  }
+
+  .heading-primary:hover {
+    cursor: pointer;
+  }
+
+  .heading-primary:hover .about__icon {
+    transform: translate(18px, 0) rotate(-32deg);
+  }
+}

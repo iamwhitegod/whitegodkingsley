@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include respond(tablet) {
+    font-size: 56.25%;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Rubik", sans-serif;
+  line-height: 1.6;
+  background-color: #171717;
+  color: #ffffff;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+[class^="section-"] {
+  height: 100vh;
+  position: relative;
+}
+
+[class$="__content-box"] {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}

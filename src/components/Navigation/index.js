@@ -1,0 +1,71 @@
+import React from "react";
+
+import logo from "../../assets/logo.svg";
+import linkedin from "../../assets/linkedin.svg";
+import github from "../../assets/github.svg";
+import twitter from "../../assets/twitter.svg";
+import instagram from "../../assets/instagram.svg";
+
+import { Link } from "react-router-dom";
+
+const Navigation = () => {
+  return (
+    <nav className="app__navigation">
+      <div className="navigation__logo">
+        <Link to="/">
+          <img src={logo} alt="logo" className="logo" />
+        </Link>
+      </div>
+
+      <div className="navigation__nav">
+        <ul className="navigation__list">
+          <li className="navigation__item">
+            <Link to="/about">About</Link>
+          </li>
+          <li className="navigation__item">
+            <Link to="/portfolio">Portfolio</Link>
+          </li>
+          <li className="navigation__item">
+            <Link to="/blog">Blog</Link>
+          </li>
+        </ul>
+
+        <div className="navigation__social-icons">
+          <Link
+            to={{ pathname: "https://linkedin.com/in/whitegodkingsley" }}
+            target="_blank"
+            className="navigation__social-icon"
+          >
+            <img src={linkedin} alt="logo" className="linkedin icon" />
+          </Link>
+
+          <Link
+            to={{ pathname: "https://github.com/iamwhitegod" }}
+            target="_blank"
+            className="navigation__social-icon"
+          >
+            <img src={github} alt="logo" className="github icon" />
+          </Link>
+
+          <Link
+            to={{ pathname: "https://twitter.com/iamwhitegod" }}
+            target="_blank"
+            className="navigation__social-icon"
+          >
+            <img src={twitter} alt="logo" className="twitter icon" />
+          </Link>
+
+          <Link
+            to={{ pathname: "https://instagram.com/iamwhitegod" }}
+            target="_blank"
+            className="navigation__social-icon"
+          >
+            <img src={instagram} alt="logo" className="instagram icon" />
+          </Link>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navigation;

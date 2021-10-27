@@ -1,0 +1,55 @@
+@mixin flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin position($position, $top, $left) {
+  position: $position;
+  top: $top;
+  left: $left;
+}
+
+@mixin respond($breakpoint) {
+  @if ($breakpoint == xs-phone) {
+    @media only screen and (max-width: 375px) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == sm-phone) {
+    @media only screen and (max-width: 375px) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == md-phone) {
+    @media only screen and (max-width: 491px) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == phone) {
+    @media only screen and (max-width: 650px) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == tablet) {
+    @media only screen and (max-width: 860px) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == sm-laptop) {
+    @media only screen and (max-width: 1024px) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == big-desktop) {
+    @media only screen and (min-width: 1440px) {
+      @content;
+    }
+  }
+}

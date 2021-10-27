@@ -1,0 +1,5 @@
+.footer {
+  &__content {
+    @include flex(space-between, center);
+  }
+}
