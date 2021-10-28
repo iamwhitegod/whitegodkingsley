@@ -7,7 +7,7 @@ import Parallax from "react-rellax";
 const Footer = () => {
   return (
     <footer className="app__footer">
-      <Parallax speed={0.5}>
+      <Parallax speed={0.3}>
         <div className="footer__content">
           <p className="footer__copyright">
             2021 &copy; Whitegod Kingsley. All rights reserved.
