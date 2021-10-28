@@ -8,7 +8,7 @@ const Home = () => {
     <div className="app__home">
       <section className="section-intro">
         <div className="intro__content-box">
-          <Parallax speed={-1}>
+          <Parallax speed={-4}>
             <span className="heading-caption">Hi there👋</span>
             <h1 className="heading-main">
               <span>I am</span>
@@ -20,7 +20,7 @@ const Home = () => {
 
       <section className="section-about">
         <div className="about__content-box">
-          <Parallax speed={2}>
+          <Parallax speed={1} style={{ marginTop: "9.6" }}>
             <span className="heading-caption">Developer👨‍💻</span>
             <h2 className="heading-primary uti-margin-b">
               About Me
