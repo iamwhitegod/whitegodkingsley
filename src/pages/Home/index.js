@@ -5,7 +5,7 @@ import arrowSm from "../../assets/arrow-sm-left.svg";
 
 const Home = () => {
   return (
-    <div className="app__home">
+    <div className="app__home" id="top">
       <section className="section-intro">
         <div className="intro__content-box">
           <Parallax speed={-3}>

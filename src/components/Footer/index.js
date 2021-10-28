@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import arrowIcon from "../../assets/back-to-top.svg";
 import Button from "../Button";
 import Parallax from "react-rellax";
 
 const Footer = () => {
+  useEffect(() => {
+    const backToTopBtn = document.querySelector(".btn--text-icon");
+    console.log("Add");
+    if (backToTopBtn) {
+      backToTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    }
+    return () => {
+      backToTopBtn.removeEventListener("click", console.log("removed"));
+    };
+  }, []);
+
   return (
     <footer className="app__footer">
       <Parallax speed={0.3}>

@@ -1,8 +1,5 @@
 import React from "react";
-import {
-  Switch,
-  Route,
-} from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 import Footer from "./components/Footer";
 import Navigation from "./components/Navigation";
@@ -14,8 +11,8 @@ const App = () => {
     <div className="app">
       <Navigation />
       <Switch>
-        <Route exact path="/" component={Home}/>
-        <Route exact path="/about" component={About}/>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/about" component={About} />
       </Switch>
       <Footer />
     </div>
