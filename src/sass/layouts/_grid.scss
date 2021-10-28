@@ -34,6 +34,11 @@
       margin-left: 3.7rem;
     }
 
+    @include respond(height) {
+      @include position(fixed, 50%, 3.2rem);
+      transform: translateY(-50%);
+    }
+
     @include respond(phone) {
       grid-column: 2 / 3;
       grid-row: 1 / 2;
@@ -42,7 +47,7 @@
       flex-direction: row;
       @include position(none, 0, 0);
       padding-top: 3.2rem;
-      margin-left: 4.4rem;
+      margin-left: 2.8rem;
     }
   }
 

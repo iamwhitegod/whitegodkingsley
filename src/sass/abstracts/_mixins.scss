@@ -41,6 +41,12 @@
     }
   }
 
+  @if ($breakpoint == height) {
+    @media only screen and (min-height: 768px) {
+      @content;
+    }
+  }
+
   @if ($breakpoint == sm-laptop) {
     @media only screen and (max-width: 1024px) {
       @content;
