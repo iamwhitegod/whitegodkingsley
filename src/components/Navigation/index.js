@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import logo from "../../assets/logo.svg";
 import linkedin from "../../assets/linkedin.svg";
@@ -12,6 +12,27 @@ import Button from "../Button";
 import { Link } from "react-router-dom";
 
 const Navigation = () => {
+  const [menu, setMenu] = useState(false);
+
+  useEffect(() => {
+    const nav = document.querySelector(".app__navigation");
+    const navList = document.querySelector(".navigation__nav");
+
+    nav.addEventListener("click", (e) => {
+      const elem = e.target;
+
+      if (elem.classList.contains("menu") || elem.closest(".menu")) {
+        menu ? setMenu(false) : setMenu(true);
+        navList.classList.toggle("navigation__nav--hidden");
+      }
+    });
+
+    return () =>
+      nav.removeEventListener("click", function () {
+        console.log("Removed");
+      });
+  }, [menu]);
+
   return (
     <nav className="app__navigation">
       <div className="navigation__logo">
@@ -20,7 +41,7 @@ const Navigation = () => {
         </Link>
       </div>
 
-      <div className="navigation__nav">
+      <div className="navigation__nav navigation__nav--hidden">
         <div className="navigation__inner">
           <ul className="navigation__list">
             <li className="navigation__item">
@@ -71,11 +92,8 @@ const Navigation = () => {
       </div>
 
       <div className="navigation__mobile-btn">
-        <Button>
-          <img src={humburger} alt="humburger menu" />
-        </Button>
-        <Button>
-          <img src={closeMenu} alt="closes menu" />
+        <Button classname="menu">
+          <img src={menu ? closeMenu : humburger} alt="humburger menu" />
         </Button>
       </div>
     </nav>
