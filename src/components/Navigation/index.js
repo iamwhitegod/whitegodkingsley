@@ -22,7 +22,7 @@ const Navigation = () => {
       const elem = e.target;
 
       if (elem.classList.contains("menu") || elem.closest(".menu")) {
-        menu ? setMenu(false) : setMenu(true);
+        // menu ? setMenu(false) : setMenu(true);
         navList.classList.toggle("navigation__nav--hidden");
       }
     });
