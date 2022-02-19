@@ -6,7 +6,7 @@ import github from "../../assets/github.svg";
 import twitter from "../../assets/twitter.svg";
 import instagram from "../../assets/instagram.svg";
 import humburger from "../../assets/ion_menu.svg";
-import closeMenu from "../../assets/ion_close.svg";
+// import closeMenu from "../../assets/ion_close.svg";
 
 import Button from "../Button";
 import { Link } from "react-router-dom";
