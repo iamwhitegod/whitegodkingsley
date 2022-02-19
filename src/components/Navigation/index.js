@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 import logo from "../../assets/logo.svg";
 import linkedin from "../../assets/linkedin.svg";
@@ -12,7 +12,7 @@ import Button from "../Button";
 import { Link } from "react-router-dom";
 
 const Navigation = () => {
-  const [menu, setMenu] = useState(false);
+  // const [menu, setMenu] = useState(false);
 
   useEffect(() => {
     const nav = document.querySelector(".app__navigation");
@@ -98,7 +98,7 @@ const Navigation = () => {
 
       <div className="navigation__mobile-btn">
         <Button classname="menu">
-          <img src={menu ? closeMenu : humburger} alt="humburger menu" />
+          <img src={humburger} alt="humburger menu" />
         </Button>
       </div>
     </nav>
