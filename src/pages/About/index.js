@@ -70,7 +70,7 @@ const About = () => {
           <Parallax speed={0.1} style={{ marginTop: 12.4 }}>
             <span className="heading-caption">Let’s work together 🤝</span>
             <h2 className="heading-primary uti-margin-b">
-              Contact
+              Contact Me
               <img src={arrowSm} alt="arrow-icon" className="about__icon" />
             </h2>
           </Parallax>
