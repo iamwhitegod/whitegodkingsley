@@ -20,7 +20,7 @@ const Home = () => {
 
       <section className="section-about">
         <div className="about__content-box">
-          <Parallax speed={0.8} style={{ marginTop: "9.6" }}>
+          <Parallax speed={0.5} style={{ marginTop: "9.6" }}>
             <span className="heading-caption">Developer👨‍💻</span>
             <h2 className="heading-primary uti-margin-b">
               About Me
