@@ -25,13 +25,18 @@ const Navigation = () => {
         // menu ? setMenu(false) : setMenu(true);
         navList.classList.toggle("navigation__nav--hidden");
       }
+
+      if (elem.closest(".navigation__nav")) {
+        navList.classList.toggle("navigation__nav--hidden");
+      }
+
+      if (elem.closest(".navigation__logo")) {
+        navList.classList.add("navigation__nav--hidden");
+      }
     });
 
-    return () =>
-      nav.removeEventListener("click", function () {
-        console.log("Removed");
-      });
-  }, [menu]);
+    return () => console.log("Removed");
+  }, []);
 
   return (
     <nav className="app__navigation">

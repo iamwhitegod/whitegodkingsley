@@ -41,10 +41,11 @@
       justify-content: center;
       background-color: #171717;
       transform: translateX(0);
+      transition: transform 0.3s;
     }
 
     &--hidden {
-      display: none;
+      // display: none;
       transform: translateX(100%);
     }
   }
