@@ -22,6 +22,17 @@
     }
   }
 
+  &__icon {
+    display: inline-block;
+    transform: translate(18px, 0);
+    transition: all 0.2s;
+
+    @include respond(phone) {
+      width: 2rem;
+      transform: translate(10px, 0);
+    }
+  }
+
   &__img {
     flex: 1 0 40%;
     align-self: start;
