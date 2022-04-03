@@ -46,7 +46,9 @@
 
     &--hidden {
       // display: none;
-      transform: translateX(100%);
+      @include respond(phone) {
+        transform: translateX(100%);
+      }
     }
   }
 
