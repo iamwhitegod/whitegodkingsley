@@ -1,0 +1,45 @@
+.portfolio {
+  &__header {
+    margin-top: 6.4rem;
+    padding: 4.8rem;
+    border: 1.3px solid hsla(0, 0%, 27%, 1);
+    border-radius: 8px;
+
+    h3 {
+      font-size: 2.4rem;
+      margin-bottom: 1.6rem;
+    }
+
+    p {
+      max-width: 48.9rem;
+      font-weight: 500;
+      line-height: 2.4rem;
+    }
+  }
+
+  &__projects {
+    margin: 4.8rem 0;
+  }
+
+  &__project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    grid-gap: 4.8rem;
+  }
+
+  &__project-card {
+    img {
+      width: 100%;
+    }
+
+    h4 {
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 1.6rem;
+    }
+
+    span {
+      font-size: 1.2rem;
+    }
+  }
+}
