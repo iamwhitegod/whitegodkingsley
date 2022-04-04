@@ -5,6 +5,10 @@
     border: 1.3px solid hsla(0, 0%, 27%, 1);
     border-radius: 8px;
 
+    @include respond(phone) {
+      margin-top: 12rem;
+    }
+
     h3 {
       font-size: 2.4rem;
       margin-bottom: 1.6rem;
