@@ -3,7 +3,7 @@ import thumbnail_01 from "../../assets/thumbnail_01.png";
 import thumbnail_02 from "../../assets/thumbnail_02.png";
 import thumbnail_03 from "../../assets/thumbnail_03.png";
 
-function Portfolio() {
+const Portfolio = () => {
   return (
     <div className="app__portfolio">
       <header className="portfolio__header">
@@ -44,6 +44,6 @@ function Portfolio() {
       </section>
     </div>
   );
-}
+};
 
 export default Portfolio;

@@ -58,7 +58,8 @@
   }
 
   &__home,
-  &__portfolio {
+  &__portfolio,
+  &__blog {
     grid-column: 3 / -2;
 
     @include respond(sm-laptop) {
