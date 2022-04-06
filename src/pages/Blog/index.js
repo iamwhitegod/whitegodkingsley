@@ -108,7 +108,9 @@ const Blog = () => {
             name="email"
             id="email"
           />
-          <button type="submit">Subscribe</button>
+          <button className="newsletter__btn" type="submit">
+            Subscribe
+          </button>
         </form>
       </section>
     </div>
