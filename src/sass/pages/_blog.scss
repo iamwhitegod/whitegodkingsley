@@ -46,4 +46,36 @@
       max-width: 100%;
     }
   }
+
+  &__posts {
+    @extend .portfolio__projects;
+  }
+
+  &__post-grid {
+    @extend .portfolio__project-grid;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  }
+
+  &__post-card {
+    & > *:not(:last-child) {
+      margin-bottom: 1.2rem;
+    }
+
+    h2 {
+      font-size: 3.6rem;
+      line-height: 4rem;
+    }
+  }
+
+  &__datetime {
+    display: flex;
+
+    & > * {
+      color: #a3a3a3;
+
+      &:not(:last-child) {
+        margin-right: 1.2rem;
+      }
+    }
+  }
 }

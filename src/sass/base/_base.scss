@@ -26,6 +26,10 @@ a:visited {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 [class^="section-"] {
   height: 100vh;
   position: relative;
